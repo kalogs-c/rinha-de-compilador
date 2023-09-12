@@ -39,7 +39,7 @@ export interface Call {
 
 export interface Let {
   kind: "Let";
-  name: string;
+  name: Parameter;
   value: Term;
   next: Term;
   location: Location;

@@ -1,0 +1,5 @@
+if (3 != 3) {
+  print("deu bom")
+} else {
+  print("deu ruim")
+}
