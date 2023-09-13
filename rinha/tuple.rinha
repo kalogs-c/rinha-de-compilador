@@ -1,1 +1,2 @@
-(6, 9)
+let t = (6,9);
+print(second(t))
