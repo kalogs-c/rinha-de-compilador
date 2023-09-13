@@ -1,7 +1,8 @@
 import { calculate } from "./binary";
-import { ASTFile, Term } from "./nodes";
+import { ASTFile, Function, Term } from "./nodes";
 
-const file = Bun.file("./rinha/if.json");
+const filename = Bun.argv[2];
+const file = Bun.file(filename);
 const ast: ASTFile = await file.json();
 
 function evaluate(node: Term, heap: Map<string, any> = new Map()) {
@@ -29,6 +30,24 @@ function evaluate(node: Term, heap: Map<string, any> = new Map()) {
     case "Tuple":
       const tuple: any = [evaluate(node.first), evaluate(node.second)];
       return tuple;
+    case "First":
+      const t1: any[] = evaluate(node.value, heap);
+      return t1[0];
+    case "Second":
+      const t2: any[] = evaluate(node.value, heap);
+      return t2[1];
+    case "Function":
+      return node;
+    case "Call":
+      const callee: Function = evaluate(node.callee, heap);
+      if (node.arguments.length != callee.parameters.length) {
+        throw new Error("Wrong number of arguments");
+      }
+      const temp_heap = new Map(heap);
+      for (let i = 0; i < node.arguments.length; i++) {
+        temp_heap.set(callee.parameters[i].text, evaluate(node.arguments[i], temp_heap));
+      }
+      return evaluate(callee.value, temp_heap)
     case "Int":
     case "Bool":
     case "Str":

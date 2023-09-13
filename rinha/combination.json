@@ -137,8 +137,8 @@
               "kind": "Int",
               "value": 1,
               "location": {
-                "start": 103,
-                "end": 104,
+                "start": 99,
+                "end": 100,
                 "filename": "rinha/combination.rinha"
               }
             },
@@ -150,8 +150,8 @@
                   "kind": "Var",
                   "text": "combination",
                   "location": {
-                    "start": 130,
-                    "end": 141,
+                    "start": 126,
+                    "end": 137,
                     "filename": "rinha/combination.rinha"
                   }
                 },
@@ -162,8 +162,8 @@
                       "kind": "Var",
                       "text": "n",
                       "location": {
-                        "start": 142,
-                        "end": 143,
+                        "start": 138,
+                        "end": 139,
                         "filename": "rinha/combination.rinha"
                       }
                     },
@@ -172,14 +172,14 @@
                       "kind": "Int",
                       "value": 1,
                       "location": {
-                        "start": 146,
-                        "end": 147,
+                        "start": 142,
+                        "end": 143,
                         "filename": "rinha/combination.rinha"
                       }
                     },
                     "location": {
-                      "start": 142,
-                      "end": 147,
+                      "start": 138,
+                      "end": 143,
                       "filename": "rinha/combination.rinha"
                     }
                   },
@@ -189,8 +189,8 @@
                       "kind": "Var",
                       "text": "k",
                       "location": {
-                        "start": 149,
-                        "end": 150,
+                        "start": 145,
+                        "end": 146,
                         "filename": "rinha/combination.rinha"
                       }
                     },
@@ -199,21 +199,21 @@
                       "kind": "Int",
                       "value": 1,
                       "location": {
-                        "start": 153,
-                        "end": 154,
+                        "start": 149,
+                        "end": 150,
                         "filename": "rinha/combination.rinha"
                       }
                     },
                     "location": {
-                      "start": 149,
-                      "end": 154,
+                      "start": 145,
+                      "end": 150,
                       "filename": "rinha/combination.rinha"
                     }
                   }
                 ],
                 "location": {
-                  "start": 130,
-                  "end": 155,
+                  "start": 126,
+                  "end": 151,
                   "filename": "rinha/combination.rinha"
                 }
               },
@@ -224,8 +224,8 @@
                   "kind": "Var",
                   "text": "combination",
                   "location": {
-                    "start": 158,
-                    "end": 169,
+                    "start": 154,
+                    "end": 165,
                     "filename": "rinha/combination.rinha"
                   }
                 },
@@ -236,8 +236,8 @@
                       "kind": "Var",
                       "text": "n",
                       "location": {
-                        "start": 170,
-                        "end": 171,
+                        "start": 166,
+                        "end": 167,
                         "filename": "rinha/combination.rinha"
                       }
                     },
@@ -246,14 +246,14 @@
                       "kind": "Int",
                       "value": 1,
                       "location": {
-                        "start": 174,
-                        "end": 175,
+                        "start": 170,
+                        "end": 171,
                         "filename": "rinha/combination.rinha"
                       }
                     },
                     "location": {
-                      "start": 170,
-                      "end": 175,
+                      "start": 166,
+                      "end": 171,
                       "filename": "rinha/combination.rinha"
                     }
                   },
@@ -261,45 +261,45 @@
                     "kind": "Var",
                     "text": "k",
                     "location": {
-                      "start": 177,
-                      "end": 178,
+                      "start": 173,
+                      "end": 174,
                       "filename": "rinha/combination.rinha"
                     }
                   }
                 ],
                 "location": {
-                  "start": 158,
-                  "end": 179,
+                  "start": 154,
+                  "end": 175,
                   "filename": "rinha/combination.rinha"
                 }
               },
               "location": {
-                "start": 130,
-                "end": 179,
+                "start": 126,
+                "end": 175,
                 "filename": "rinha/combination.rinha"
               }
             },
             "location": {
               "start": 77,
-              "end": 185,
+              "end": 181,
               "filename": "rinha/combination.rinha"
             }
           },
           "location": {
             "start": 57,
-            "end": 185,
+            "end": 181,
             "filename": "rinha/combination.rinha"
           }
         },
         "location": {
           "start": 37,
-          "end": 185,
+          "end": 181,
           "filename": "rinha/combination.rinha"
         }
       },
       "location": {
         "start": 18,
-        "end": 187,
+        "end": 183,
         "filename": "rinha/combination.rinha"
       }
     },
@@ -311,8 +311,8 @@
           "kind": "Var",
           "text": "combination",
           "location": {
-            "start": 196,
-            "end": 207,
+            "start": 192,
+            "end": 203,
             "filename": "rinha/combination.rinha"
           }
         },
@@ -321,8 +321,8 @@
             "kind": "Int",
             "value": 10,
             "location": {
-              "start": 208,
-              "end": 210,
+              "start": 204,
+              "end": 206,
               "filename": "rinha/combination.rinha"
             }
           },
@@ -330,33 +330,33 @@
             "kind": "Int",
             "value": 2,
             "location": {
-              "start": 212,
-              "end": 213,
+              "start": 208,
+              "end": 209,
               "filename": "rinha/combination.rinha"
             }
           }
         ],
         "location": {
-          "start": 196,
-          "end": 214,
+          "start": 192,
+          "end": 210,
           "filename": "rinha/combination.rinha"
         }
       },
       "location": {
-        "start": 190,
-        "end": 215,
+        "start": 186,
+        "end": 211,
         "filename": "rinha/combination.rinha"
       }
     },
     "location": {
       "start": 0,
-      "end": 215,
+      "end": 211,
       "filename": "rinha/combination.rinha"
     }
   },
   "location": {
     "start": 0,
-    "end": 215,
+    "end": 211,
     "filename": "rinha/combination.rinha"
   }
 }
