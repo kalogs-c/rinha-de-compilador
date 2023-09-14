@@ -14,7 +14,17 @@ function evaluate(node: Term, heap: Map<string, any> = new Map()) {
       return heap.get(node.text);
     case "Print":
       const value = evaluate(node.value, heap);
-      console.log(value);
+      if (!value) {
+        throw new Error("Variable was not defined");
+      }
+
+      let printValue = value;
+      if (value.kind == "Function") {
+        printValue = "<#closure>"
+      } else if (Array.isArray(value)) {
+        printValue = `(${value.join(", ")})`
+      }
+      console.log(printValue);
       break;
     case "Binary":
       const lhs: any = evaluate(node.lhs, heap);

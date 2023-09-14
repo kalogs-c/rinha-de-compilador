@@ -1,1 +1,6 @@
-print("Oi Rinha!")
+let a = fn () => {
+  print("oi")
+};
+
+let _ = print(a);
+print((1, 2))
