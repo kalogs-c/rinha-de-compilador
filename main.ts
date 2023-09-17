@@ -1,8 +1,7 @@
 import { calculate } from "./binary";
 import { ASTFile, Function, Term } from "./nodes";
 
-const filename = Bun.argv[2];
-const file = Bun.file(filename);
+const file = Bun.file("/var/rinha/source.rinha.json");
 const ast: ASTFile = await file.json();
 
 function evaluate(node: Term, heap: Map<string, any> = new Map()) {
@@ -14,7 +13,7 @@ function evaluate(node: Term, heap: Map<string, any> = new Map()) {
       return heap.get(node.text);
     case "Print":
       const value = evaluate(node.value, heap);
-      if (!value) {
+      if (!value && node.value.kind != "Binary") {
         throw new Error("Variable was not defined");
       }
 
