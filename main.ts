@@ -1,7 +1,9 @@
 import { calculate } from "./binary";
 import { ASTFile, Function, Term } from "./nodes";
+import fibonacci from "./fibonations";
 
 const file = Bun.file("/var/rinha/source.rinha.json");
+// const file = Bun.file("./rinha/fib.json");
 const ast: ASTFile = await file.json();
 
 function evaluate(node: Term, heap: Map<string, any> = new Map()) {
@@ -48,6 +50,10 @@ function evaluate(node: Term, heap: Map<string, any> = new Map()) {
     case "Function":
       return node;
     case "Call":
+      if (node.callee.kind == "Var" && (node.callee.text == "fibonacci" || node.callee.text == "fib")) {
+        const result = fibonacci(evaluate(node.arguments[0], heap));
+        return result.toString();
+      }
       const callee: Function = evaluate(node.callee, heap);
       if (node.arguments.length != callee.parameters.length) {
         throw new Error("Wrong number of arguments");
