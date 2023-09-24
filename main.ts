@@ -2,8 +2,7 @@ import { calculate } from "./binary";
 import { ASTFile, Function, Term } from "./nodes";
 import fibonacci from "./fibonations";
 
-const file = Bun.file("/var/rinha/source.rinha.json");
-// const file = Bun.file("./rinha/fib.json");
+const file = Bun.file("./source.rinha.json");
 const ast: ASTFile = await file.json();
 
 function evaluate(node: Term, heap: Map<string, any> = new Map()) {

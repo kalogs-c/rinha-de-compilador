@@ -2,15 +2,10 @@
 
 O interpretador mais bonito de todos
 
-Para rodar, primeiro instale as dependencias:
-```bash
-bun install
-```
+Para rodar:
 
-Depois
+`docker run -v $PWD/<seu arquivo .json>:/var/rinha/source.rinha.json carlinhoscamilo/bunito`
 
-```bash
-bun run main.ts <o caminho para o arquivo .json>
-```
+Exemplo:
 
-This project was created using `bun init` in bun v0.6.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+`docker run -v $PWD/rinha/combination.json:/var/rinha/source.rinha.json carlinhoscamilo/bunito`

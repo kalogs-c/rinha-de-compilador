@@ -1,6 +1,6 @@
 FROM oven/bun:latest
 
-WORKDIR /app
+WORKDIR /var/rinha/
 
 COPY . .
 
