@@ -1,6 +1,6 @@
 # bunito
 
-O interpretador mais bonito de todos
+O interpretador mais bonito de todos feito para a [Rinha de Compiladores](https://github.com/aripiprazole/rinha-de-compiler)
 
 Para rodar:
 
