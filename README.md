@@ -8,4 +8,5 @@ Para rodar:
 
 Exemplo:
 
+Assumindo que estou na raiz desse projeto  
 `docker run -v $PWD/rinha/combination.json:/var/rinha/source.rinha.json carlinhoscamilo/bunito`
